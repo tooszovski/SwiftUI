@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2816B646239C204F00815CD5 /* MakerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816B645239C204F00815CD5 /* MakerListView.swift */; };
+		287AFC09239D16400093ECF4 /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC08239D163F0093ECF4 /* MakerView.swift */; };
 		28ABE4B1239C0EEE00CE217B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */; };
 		28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */; };
-		28ABE4B5239C0EEE00CE217B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B4239C0EEE00CE217B /* ContentView.swift */; };
+		28ABE4B5239C0EEE00CE217B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B4239C0EEE00CE217B /* MainView.swift */; };
 		28ABE4B7239C0EEF00CE217B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE4B6239C0EEF00CE217B /* Assets.xcassets */; };
 		28ABE4BA239C0EEF00CE217B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE4B9239C0EEF00CE217B /* Preview Assets.xcassets */; };
 		28ABE4BD239C0EEF00CE217B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE4BB239C0EEF00CE217B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2816B645239C204F00815CD5 /* MakerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerListView.swift; sourceTree = "<group>"; };
+		287AFC08239D163F0093ECF4 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 		28ABE4AD239C0EEE00CE217B /* SwiftUIHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28ABE4B4239C0EEE00CE217B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28ABE4B4239C0EEE00CE217B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		28ABE4B6239C0EEF00CE217B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28ABE4B9239C0EEF00CE217B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28ABE4BC239C0EEF00CE217B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */,
 				28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */,
-				28ABE4B4239C0EEE00CE217B /* ContentView.swift */,
+				28ABE4B4239C0EEE00CE217B /* MainView.swift */,
 				28ABE4B6239C0EEF00CE217B /* Assets.xcassets */,
 				28ABE4BB239C0EEF00CE217B /* LaunchScreen.storyboard */,
 				28ABE4BE239C0EEF00CE217B /* Info.plist */,
 				28ABE4B8239C0EEF00CE217B /* Preview Content */,
+				2816B645239C204F00815CD5 /* MakerListView.swift */,
+				287AFC08239D163F0093ECF4 /* MakerView.swift */,
 			);
 			path = SwiftUIHomeWork;
 			sourceTree = "<group>";
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287AFC09239D16400093ECF4 /* MakerView.swift in Sources */,
 				28ABE4B1239C0EEE00CE217B /* AppDelegate.swift in Sources */,
+				2816B646239C204F00815CD5 /* MakerListView.swift in Sources */,
 				28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */,
-				28ABE4B5239C0EEE00CE217B /* ContentView.swift in Sources */,
+				28ABE4B5239C0EEE00CE217B /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
