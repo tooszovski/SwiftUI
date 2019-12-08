@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2816B646239C204F00815CD5 /* MakerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2816B645239C204F00815CD5 /* MakerListView.swift */; };
 		287AFC09239D16400093ECF4 /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC08239D163F0093ECF4 /* MakerView.swift */; };
+		287AFC0C239D2FC00093ECF4 /* BetterSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 287AFC0B239D2FC00093ECF4 /* BetterSheet */; };
+		287AFC0F239D31370093ECF4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC0E239D31370093ECF4 /* StartView.swift */; };
+		287AFC11239D32550093ECF4 /* StartModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC10239D32550093ECF4 /* StartModalView.swift */; };
 		28ABE4B1239C0EEE00CE217B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */; };
 		28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */; };
 		28ABE4B5239C0EEE00CE217B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B4239C0EEE00CE217B /* MainView.swift */; };
@@ -20,6 +23,8 @@
 /* Begin PBXFileReference section */
 		2816B645239C204F00815CD5 /* MakerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerListView.swift; sourceTree = "<group>"; };
 		287AFC08239D163F0093ECF4 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
+		287AFC0E239D31370093ECF4 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		287AFC10239D32550093ECF4 /* StartModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartModalView.swift; sourceTree = "<group>"; };
 		28ABE4AD239C0EEE00CE217B /* SwiftUIHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +40,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287AFC0C239D2FC00093ECF4 /* BetterSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287AFC0D239D31040093ECF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28ABE4B4239C0EEE00CE217B /* MainView.swift */,
+				2816B645239C204F00815CD5 /* MakerListView.swift */,
+				287AFC08239D163F0093ECF4 /* MakerView.swift */,
+				287AFC0E239D31370093ECF4 /* StartView.swift */,
+				287AFC10239D32550093ECF4 /* StartModalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		28ABE4A4239C0EEE00CE217B = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +78,13 @@
 		28ABE4AF239C0EEE00CE217B /* SwiftUIHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				287AFC0D239D31040093ECF4 /* Views */,
 				28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */,
 				28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */,
-				28ABE4B4239C0EEE00CE217B /* MainView.swift */,
 				28ABE4B6239C0EEF00CE217B /* Assets.xcassets */,
 				28ABE4BB239C0EEF00CE217B /* LaunchScreen.storyboard */,
 				28ABE4BE239C0EEF00CE217B /* Info.plist */,
 				28ABE4B8239C0EEF00CE217B /* Preview Content */,
-				2816B645239C204F00815CD5 /* MakerListView.swift */,
-				287AFC08239D163F0093ECF4 /* MakerView.swift */,
 			);
 			path = SwiftUIHomeWork;
 			sourceTree = "<group>";
@@ -97,6 +113,9 @@
 			dependencies = (
 			);
 			name = SwiftUIHomeWork;
+			packageProductDependencies = (
+				287AFC0B239D2FC00093ECF4 /* BetterSheet */,
+			);
 			productName = SwiftUIHomeWork;
 			productReference = 28ABE4AD239C0EEE00CE217B /* SwiftUIHomeWork.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 28ABE4A4239C0EEE00CE217B;
+			packageReferences = (
+				287AFC0A239D2FC00093ECF4 /* XCRemoteSwiftPackageReference "BetterSheet" */,
+			);
 			productRefGroup = 28ABE4AE239C0EEE00CE217B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,6 +177,8 @@
 				287AFC09239D16400093ECF4 /* MakerView.swift in Sources */,
 				28ABE4B1239C0EEE00CE217B /* AppDelegate.swift in Sources */,
 				2816B646239C204F00815CD5 /* MakerListView.swift in Sources */,
+				287AFC0F239D31370093ECF4 /* StartView.swift in Sources */,
+				287AFC11239D32550093ECF4 /* StartModalView.swift in Sources */,
 				28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */,
 				28ABE4B5239C0EEE00CE217B /* MainView.swift in Sources */,
 			);
@@ -350,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		287AFC0A239D2FC00093ECF4 /* XCRemoteSwiftPackageReference "BetterSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:egeniq/BetterSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		287AFC0B239D2FC00093ECF4 /* BetterSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 287AFC0A239D2FC00093ECF4 /* XCRemoteSwiftPackageReference "BetterSheet" */;
+			productName = BetterSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28ABE4A5239C0EEE00CE217B /* Project object */;
 }
