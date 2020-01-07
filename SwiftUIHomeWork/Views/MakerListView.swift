@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MakerListView: View {
-  @ObservedObject var viewModel = CarMakerViewModel()
+  @EnvironmentObject var viewModel: CarMakerViewModel
 
   @State var favesShowed = false
 
@@ -19,14 +19,19 @@ struct MakerListView: View {
 
   var body: some View {
     NavigationView {
-      VStack {
-        List {
-          FilterView(favesShowed: $favesShowed)
-            .environmentObject(viewModel)
-          ForEach(viewModel.makers) { maker in
-            if !self.favesShowed || maker.isFavourite {
-              NavigationLink(destination: MakerView()) {
-                Text(maker.name)
+      Group {
+        if viewModel.isLoading {
+          ActivityIndicatorView()
+            .scaleEffect(2)
+        } else {
+          List {
+            FilterView(favesShowed: $favesShowed)
+              .environmentObject(viewModel)
+            ForEach(viewModel.makers) { maker in
+              if !self.favesShowed || maker.isFavourite {
+                NavigationLink(destination: MakerView()) {
+                  Text(maker.name)
+                }
               }
             }
           }
@@ -42,13 +47,6 @@ struct MakerListView_Previews: PreviewProvider {
   static var previews: some View {
     MakerListView()
   }
-}
-
-final class CarMakerViewModel: ObservableObject {
-  @Published private(set) var filterButtonName = "Switch faves"
-  @Published private(set) var makers = [Maker(name: "Subaru", isFavourite: true),
-                                        Maker(name: "Mitsubishi", isFavourite: false),
-                                        Maker(name: "Toyota", isFavourite: false)]
 }
 
 struct Maker: Identifiable {

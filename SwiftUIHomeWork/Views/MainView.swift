@@ -15,18 +15,19 @@ struct MainView: View {
 
   var body: some View {
     TabView(selection: $selection) {
-      StartView()
-        .tabItem {
-          VStack {
-            Image(systemName: "bolt")
-            Text("Start") }
-      }
-      .tag(0)
       MakerListView()
         .tabItem {
           VStack {
             Image(systemName: "car")
             Text("Maker") }
+      }
+      .environmentObject(CarMakerViewModel())
+      .tag(0)
+      StartView()
+        .tabItem {
+          VStack {
+            Image(systemName: "bolt")
+            Text("Start") }
       }
       .tag(1)
       AboutView()

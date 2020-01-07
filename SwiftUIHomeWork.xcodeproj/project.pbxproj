@@ -12,12 +12,14 @@
 		287AFC0C239D2FC00093ECF4 /* BetterSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 287AFC0B239D2FC00093ECF4 /* BetterSheet */; };
 		287AFC0F239D31370093ECF4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC0E239D31370093ECF4 /* StartView.swift */; };
 		287AFC11239D32550093ECF4 /* StartModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC10239D32550093ECF4 /* StartModalView.swift */; };
+		28A43AC923C4835800D9C69B /* CarMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A43AC823C4835800D9C69B /* CarMakerViewModel.swift */; };
 		28ABE4B1239C0EEE00CE217B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */; };
 		28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */; };
 		28ABE4B5239C0EEE00CE217B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B4239C0EEE00CE217B /* MainView.swift */; };
 		28ABE4B7239C0EEF00CE217B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE4B6239C0EEF00CE217B /* Assets.xcassets */; };
 		28ABE4BA239C0EEF00CE217B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE4B9239C0EEF00CE217B /* Preview Assets.xcassets */; };
 		28ABE4BD239C0EEF00CE217B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ABE4BB239C0EEF00CE217B /* LaunchScreen.storyboard */; };
+		28D5F21F23C480B700A45A55 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5F21E23C480B700A45A55 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		287AFC08239D163F0093ECF4 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 		287AFC0E239D31370093ECF4 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		287AFC10239D32550093ECF4 /* StartModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartModalView.swift; sourceTree = "<group>"; };
+		28A43AC823C4835800D9C69B /* CarMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMakerViewModel.swift; sourceTree = "<group>"; };
 		28ABE4AD239C0EEE00CE217B /* SwiftUIHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		28ABE4B9239C0EEF00CE217B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28ABE4BC239C0EEF00CE217B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28ABE4BE239C0EEF00CE217B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D5F21E23C480B700A45A55 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		28A43AC723C4834200D9C69B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				28A43AC823C4835800D9C69B /* CarMakerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		28ABE4A4239C0EEE00CE217B = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +90,7 @@
 		28ABE4AF239C0EEE00CE217B /* SwiftUIHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				28A43AC723C4834200D9C69B /* ViewModels */,
 				287AFC0D239D31040093ECF4 /* Views */,
 				28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */,
 				28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */,
@@ -85,6 +98,7 @@
 				28ABE4BB239C0EEF00CE217B /* LaunchScreen.storyboard */,
 				28ABE4BE239C0EEF00CE217B /* Info.plist */,
 				28ABE4B8239C0EEF00CE217B /* Preview Content */,
+				28D5F21E23C480B700A45A55 /* ActivityIndicator.swift */,
 			);
 			path = SwiftUIHomeWork;
 			sourceTree = "<group>";
@@ -176,8 +190,10 @@
 			files = (
 				287AFC09239D16400093ECF4 /* MakerView.swift in Sources */,
 				28ABE4B1239C0EEE00CE217B /* AppDelegate.swift in Sources */,
+				28A43AC923C4835800D9C69B /* CarMakerViewModel.swift in Sources */,
 				2816B646239C204F00815CD5 /* MakerListView.swift in Sources */,
 				287AFC0F239D31370093ECF4 /* StartView.swift in Sources */,
+				28D5F21F23C480B700A45A55 /* ActivityIndicator.swift in Sources */,
 				287AFC11239D32550093ECF4 /* StartModalView.swift in Sources */,
 				28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */,
 				28ABE4B5239C0EEE00CE217B /* MainView.swift in Sources */,
