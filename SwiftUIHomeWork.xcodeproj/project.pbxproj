@@ -12,6 +12,7 @@
 		287AFC0C239D2FC00093ECF4 /* BetterSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 287AFC0B239D2FC00093ECF4 /* BetterSheet */; };
 		287AFC0F239D31370093ECF4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC0E239D31370093ECF4 /* StartView.swift */; };
 		287AFC11239D32550093ECF4 /* StartModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287AFC10239D32550093ECF4 /* StartModalView.swift */; };
+		2882472E23C48A9D0036032F /* TwoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2882472D23C48A9D0036032F /* TwoColumnView.swift */; };
 		28A43AC923C4835800D9C69B /* CarMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A43AC823C4835800D9C69B /* CarMakerViewModel.swift */; };
 		28ABE4B1239C0EEE00CE217B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */; };
 		28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABE4B2239C0EEE00CE217B /* SceneDelegate.swift */; };
@@ -27,6 +28,7 @@
 		287AFC08239D163F0093ECF4 /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 		287AFC0E239D31370093ECF4 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		287AFC10239D32550093ECF4 /* StartModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartModalView.swift; sourceTree = "<group>"; };
+		2882472D23C48A9D0036032F /* TwoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnView.swift; sourceTree = "<group>"; };
 		28A43AC823C4835800D9C69B /* CarMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMakerViewModel.swift; sourceTree = "<group>"; };
 		28ABE4AD239C0EEE00CE217B /* SwiftUIHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28ABE4B0239C0EEE00CE217B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				287AFC08239D163F0093ECF4 /* MakerView.swift */,
 				287AFC0E239D31370093ECF4 /* StartView.swift */,
 				287AFC10239D32550093ECF4 /* StartModalView.swift */,
+				2882472D23C48A9D0036032F /* TwoColumnView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				28A43AC923C4835800D9C69B /* CarMakerViewModel.swift in Sources */,
 				2816B646239C204F00815CD5 /* MakerListView.swift in Sources */,
 				287AFC0F239D31370093ECF4 /* StartView.swift in Sources */,
+				2882472E23C48A9D0036032F /* TwoColumnView.swift in Sources */,
 				28D5F21F23C480B700A45A55 /* ActivityIndicator.swift in Sources */,
 				287AFC11239D32550093ECF4 /* StartModalView.swift in Sources */,
 				28ABE4B3239C0EEE00CE217B /* SceneDelegate.swift in Sources */,
